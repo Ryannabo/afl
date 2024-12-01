@@ -1,0 +1,74 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light gray-blue background for a soothing effect */
+  color: #333;
+}
+
+/* App container */
+.app-container {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Header styling */
+.app-header {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Two-column layout */
+.app-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Column styling */
+.app-column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app-column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs and outputs */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Accepted and declined message styling */
+p[style*="green"] {
+  color: #2e7d32; /* Pleasant green for accepted */
+}
+
+p[style*="red"] {
+  color: #d32f2f; /* Pleasant red for declined */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+}
